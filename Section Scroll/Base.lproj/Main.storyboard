@@ -22,11 +22,14 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-ec-hLH">
-                                        <rect key="frame" x="9" y="8" width="358" height="30"/>
+                                        <rect key="frame" x="8" y="8" width="359" height="30"/>
                                         <state key="normal" title="First"/>
+                                        <connections>
+                                            <action selector="firstButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAj-VO-yIi"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Something " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W5q-T5-gb7">
-                                        <rect key="frame" x="9" y="46" width="357" height="100"/>
+                                        <rect key="frame" x="8" y="46" width="359" height="100"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="iyg-r6-R8U"/>
@@ -38,19 +41,22 @@
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="cdK-ec-hLH" firstAttribute="top" secondItem="FNq-2j-Ygz" secondAttribute="top" constant="8" id="9DK-Sr-7wY"/>
-                                    <constraint firstItem="cdK-ec-hLH" firstAttribute="leading" secondItem="FNq-2j-Ygz" secondAttribute="leading" constant="9" id="Alk-bG-grg"/>
+                                    <constraint firstItem="cdK-ec-hLH" firstAttribute="leading" secondItem="FNq-2j-Ygz" secondAttribute="leading" constant="8" id="Alk-bG-grg"/>
                                     <constraint firstItem="W5q-T5-gb7" firstAttribute="top" secondItem="cdK-ec-hLH" secondAttribute="bottom" constant="8" id="CKg-mI-VU4"/>
-                                    <constraint firstAttribute="trailing" secondItem="W5q-T5-gb7" secondAttribute="trailing" constant="9" id="Cjc-Nq-rgk"/>
-                                    <constraint firstItem="W5q-T5-gb7" firstAttribute="leading" secondItem="FNq-2j-Ygz" secondAttribute="leading" constant="9" id="dyU-d4-KQ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="W5q-T5-gb7" secondAttribute="trailing" constant="8" id="Cjc-Nq-rgk"/>
+                                    <constraint firstItem="W5q-T5-gb7" firstAttribute="leading" secondItem="FNq-2j-Ygz" secondAttribute="leading" constant="8" id="dyU-d4-KQ3"/>
                                     <constraint firstAttribute="trailing" secondItem="cdK-ec-hLH" secondAttribute="trailing" constant="8" id="zH7-53-r0p"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLw-T3-pcd" userLabel="Second">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxR-NW-oPr">
                                         <rect key="frame" x="8" y="8" width="359" height="30"/>
                                         <state key="normal" title="Second"/>
+                                        <connections>
+                                            <action selector="secondButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDM-gq-6P2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -61,11 +67,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-Ni-3p2" userLabel="Third">
-                                <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPA-zq-xdq">
                                         <rect key="frame" x="8" y="8" width="359" height="30"/>
                                         <state key="normal" title="Third"/>
+                                        <connections>
+                                            <action selector="thirdButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Voa-D9-aVx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,27 +87,30 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FNq-2j-Ygz" secondAttribute="bottom" id="11w-cF-7oe"/>
+                            <constraint firstItem="FNq-2j-Ygz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2kZ-8d-gjJ"/>
                             <constraint firstItem="WIf-Ni-3p2" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="6l7-4r-lCK"/>
-                            <constraint firstItem="NLw-T3-pcd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="HsE-ii-V1S"/>
                             <constraint firstItem="WIf-Ni-3p2" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="RIL-5g-KL4"/>
-                            <constraint firstItem="WIf-Ni-3p2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sad-FJ-Xcf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FNq-2j-Ygz" secondAttribute="trailing" id="X0c-ZT-Llj"/>
-                            <constraint firstItem="NLw-T3-pcd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bDA-2Y-SZ9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NLw-T3-pcd" secondAttribute="bottom" id="bqu-Vx-hFg"/>
-                            <constraint firstItem="FNq-2j-Ygz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hLg-rM-btd"/>
-                            <constraint firstItem="WIf-Ni-3p2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="izN-ld-Zl9"/>
-                            <constraint firstItem="NLw-T3-pcd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mru-Ah-bD4"/>
-                            <constraint firstItem="FNq-2j-Ygz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="osB-Ny-q0q"/>
+                            <constraint firstItem="NLw-T3-pcd" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="XAQ-cp-VJV"/>
+                            <constraint firstItem="NLw-T3-pcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YR9-9p-rHw"/>
+                            <constraint firstItem="NLw-T3-pcd" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="ZjI-dh-zkm"/>
+                            <constraint firstItem="WIf-Ni-3p2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZpF-S2-Qmk"/>
+                            <constraint firstItem="WIf-Ni-3p2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1H-1l-7Oe"/>
+                            <constraint firstItem="FNq-2j-Ygz" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="dTa-IZ-W2V"/>
+                            <constraint firstItem="FNq-2j-Ygz" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="lQr-fI-JF8"/>
+                            <constraint firstItem="NLw-T3-pcd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lxN-6K-Iku"/>
+                            <constraint firstItem="FNq-2j-Ygz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p3W-cm-nzd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="FirstView" destination="FNq-2j-Ygz" id="aiX-7b-W4f"/>
                         <outlet property="firstButton" destination="cdK-ec-hLH" id="Zz1-cd-FXk"/>
+                        <outlet property="firstToTop" destination="p3W-cm-nzd" id="kPb-re-rV0"/>
                         <outlet property="secondButton" destination="JxR-NW-oPr" id="gAo-Oq-ceD"/>
+                        <outlet property="secondToTop" destination="lxN-6K-Iku" id="Tac-mG-UUC"/>
                         <outlet property="secondView" destination="NLw-T3-pcd" id="vpf-nD-uC0"/>
                         <outlet property="thirdButton" destination="iPA-zq-xdq" id="ric-Ct-YK9"/>
+                        <outlet property="thirdToTop" destination="ZpF-S2-Qmk" id="sed-PY-klh"/>
                         <outlet property="thirdView" destination="WIf-Ni-3p2" id="bi7-8q-gEB"/>
                     </connections>
                 </viewController>
