@@ -31,27 +31,30 @@ class ViewController: UIViewController {
         secondView.layer.shadowColor = UIColor.black.cgColor
         secondView.layer.shadowOpacity = 1
         secondView.layer.shadowOffset = CGSize.zero
-        secondView.layer.shadowRadius = 10
+        secondView.layer.shadowRadius = 3
         
         thirdToTop.constant = 200
         thirdView.backgroundColor = UIColor.purple
         thirdView.layer.shadowColor = UIColor.black.cgColor
         thirdView.layer.shadowOpacity = 1
         thirdView.layer.shadowOffset = CGSize.zero
-        thirdView.layer.shadowRadius = 10
+        thirdView.layer.shadowRadius = 3
         
     }
 
     @IBAction func firstButtonPressed(_ sender: Any) {
-        
+        secondToTop.constant = view.frame.height - 150
+        thirdToTop.constant = view.frame.height - 100
     }
     
     @IBAction func secondButtonPressed(_ sender: Any) {
-        
+        secondToTop.constant = 50
+        thirdToTop.constant = view.frame.height - 100
     }
     
     @IBAction func thirdButtonPressed(_ sender: Any) {
-        
+        secondToTop.constant = 50
+        thirdToTop.constant = 100
     }
 }
 

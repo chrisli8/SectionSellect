@@ -58,10 +58,18 @@
                                             <action selector="secondButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDM-gq-6P2"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQC-Wu-Ros">
+                                        <rect key="frame" x="127" y="313" width="121" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="wQC-Wu-Ros" firstAttribute="centerX" secondItem="NLw-T3-pcd" secondAttribute="centerX" id="024-ZD-PUw"/>
                                     <constraint firstItem="JxR-NW-oPr" firstAttribute="top" secondItem="NLw-T3-pcd" secondAttribute="top" constant="8" id="3nD-kd-5Uf"/>
+                                    <constraint firstItem="wQC-Wu-Ros" firstAttribute="centerY" secondItem="NLw-T3-pcd" secondAttribute="centerY" id="V1p-1S-SOC"/>
                                     <constraint firstAttribute="trailing" secondItem="JxR-NW-oPr" secondAttribute="trailing" constant="8" id="ZQK-zr-eVu"/>
                                     <constraint firstItem="JxR-NW-oPr" firstAttribute="leading" secondItem="NLw-T3-pcd" secondAttribute="leading" constant="8" id="jCv-6I-FUR"/>
                                 </constraints>
@@ -76,10 +84,18 @@
                                             <action selector="thirdButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Voa-D9-aVx"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h6-kv-ne4">
+                                        <rect key="frame" x="136.5" y="313" width="102" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="iPA-zq-xdq" firstAttribute="leading" secondItem="WIf-Ni-3p2" secondAttribute="leading" constant="8" id="KD4-zY-SqK"/>
+                                    <constraint firstItem="7h6-kv-ne4" firstAttribute="centerX" secondItem="WIf-Ni-3p2" secondAttribute="centerX" id="Knx-V8-1hA"/>
+                                    <constraint firstItem="7h6-kv-ne4" firstAttribute="centerY" secondItem="WIf-Ni-3p2" secondAttribute="centerY" id="eOL-c0-FFy"/>
                                     <constraint firstItem="iPA-zq-xdq" firstAttribute="top" secondItem="WIf-Ni-3p2" secondAttribute="top" constant="8" id="irt-nc-Exw"/>
                                     <constraint firstAttribute="trailing" secondItem="iPA-zq-xdq" secondAttribute="trailing" constant="8" id="zuP-uR-8Jj"/>
                                 </constraints>
