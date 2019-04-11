@@ -43,18 +43,45 @@ class ViewController: UIViewController {
     }
 
     @IBAction func firstButtonPressed(_ sender: Any) {
-        secondToTop.constant = view.frame.height - 150
-        thirdToTop.constant = view.frame.height - 100
+        self.secondToTop.constant = self.view.frame.height - 150
+        self.thirdToTop.constant = self.view.frame.height - 100
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn, animations: { () -> Void in
+            
+            self.view.layoutIfNeeded()
+
+        }, completion: { (value: Bool) in
+            
+        })
+        
+        
+        //secondToTop.constant = view.frame.height - 150
+        //thirdToTop.constant = view.frame.height - 100
     }
     
     @IBAction func secondButtonPressed(_ sender: Any) {
         secondToTop.constant = 50
         thirdToTop.constant = view.frame.height - 100
+        
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn, animations: { () -> Void in
+            
+            self.view.layoutIfNeeded()
+            
+        }, completion: { (value: Bool) in
+            
+        })
     }
     
     @IBAction func thirdButtonPressed(_ sender: Any) {
         secondToTop.constant = 50
         thirdToTop.constant = 100
+        
+        UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn, animations: { () -> Void in
+            
+            self.view.layoutIfNeeded()
+            
+        }, completion: { (value: Bool) in
+            
+        })
     }
 }
 
