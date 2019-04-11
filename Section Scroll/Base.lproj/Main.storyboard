@@ -23,6 +23,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-ec-hLH">
                                         <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="First"/>
                                         <connections>
                                             <action selector="firstButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAj-VO-yIi"/>
@@ -53,6 +54,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxR-NW-oPr">
                                         <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Second"/>
                                         <connections>
                                             <action selector="secondButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDM-gq-6P2"/>
@@ -60,6 +62,7 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Section" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQC-Wu-Ros">
                                         <rect key="frame" x="127" y="313" width="121" height="21"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -79,6 +82,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPA-zq-xdq">
                                         <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Third"/>
                                         <connections>
                                             <action selector="thirdButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Voa-D9-aVx"/>
@@ -120,11 +124,20 @@
                     </view>
                     <connections>
                         <outlet property="FirstView" destination="FNq-2j-Ygz" id="aiX-7b-W4f"/>
+                        <outlet property="fBtnLead" destination="Alk-bG-grg" id="eJA-Gn-LAr"/>
+                        <outlet property="fBtnTop" destination="9DK-Sr-7wY" id="Irz-hC-1SV"/>
+                        <outlet property="fBtnTrail" destination="zH7-53-r0p" id="uhi-id-BOs"/>
                         <outlet property="firstButton" destination="cdK-ec-hLH" id="Zz1-cd-FXk"/>
                         <outlet property="firstToTop" destination="p3W-cm-nzd" id="kPb-re-rV0"/>
+                        <outlet property="sBtnLead" destination="jCv-6I-FUR" id="RlM-Nm-bBq"/>
+                        <outlet property="sBtnTop" destination="3nD-kd-5Uf" id="Pdu-Gg-oKd"/>
+                        <outlet property="sBtnTrail" destination="ZQK-zr-eVu" id="Poz-Mf-zbp"/>
                         <outlet property="secondButton" destination="JxR-NW-oPr" id="gAo-Oq-ceD"/>
                         <outlet property="secondToTop" destination="lxN-6K-Iku" id="Tac-mG-UUC"/>
                         <outlet property="secondView" destination="NLw-T3-pcd" id="vpf-nD-uC0"/>
+                        <outlet property="tBtnLead" destination="KD4-zY-SqK" id="gwk-N6-Ujf"/>
+                        <outlet property="tBtnTop" destination="irt-nc-Exw" id="a3I-Ew-008"/>
+                        <outlet property="tBtnTrail" destination="zuP-uR-8Jj" id="Crk-oQ-CaB"/>
                         <outlet property="thirdButton" destination="iPA-zq-xdq" id="ric-Ct-YK9"/>
                         <outlet property="thirdToTop" destination="ZpF-S2-Qmk" id="sed-PY-klh"/>
                         <outlet property="thirdView" destination="WIf-Ni-3p2" id="bi7-8q-gEB"/>
