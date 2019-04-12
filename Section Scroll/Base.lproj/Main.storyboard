@@ -27,7 +27,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="AYY-J7-Add"/>
                                         </constraints>
-                                        <state key="normal" title="Add Activity"/>
+                                        <state key="normal" title="1: Add Activity"/>
                                         <connections>
                                             <action selector="firstButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAj-VO-yIi"/>
                                         </connections>
@@ -61,7 +61,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pZq-99-JVd"/>
                                         </constraints>
-                                        <state key="normal" title="Set Durration"/>
+                                        <state key="normal" title="2: Set Durration"/>
                                         <connections>
                                             <action selector="secondButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDM-gq-6P2"/>
                                         </connections>
@@ -110,7 +110,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ne5-Oc-9pm"/>
                                         </constraints>
-                                        <state key="normal" title="Set Priority"/>
+                                        <state key="normal" title="3: Set Priority"/>
                                         <connections>
                                             <action selector="thirdButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Voa-D9-aVx"/>
                                         </connections>
@@ -151,6 +151,7 @@
                     </view>
                     <connections>
                         <outlet property="FirstView" destination="FNq-2j-Ygz" id="aiX-7b-W4f"/>
+                        <outlet property="fBtnHeight" destination="AYY-J7-Add" id="A8T-QI-A8g"/>
                         <outlet property="fBtnLead" destination="Alk-bG-grg" id="eJA-Gn-LAr"/>
                         <outlet property="fBtnTop" destination="9DK-Sr-7wY" id="Irz-hC-1SV"/>
                         <outlet property="fBtnTrail" destination="zH7-53-r0p" id="uhi-id-BOs"/>
@@ -166,6 +167,7 @@
                         <outlet property="tBtnLead" destination="KD4-zY-SqK" id="gwk-N6-Ujf"/>
                         <outlet property="tBtnTop" destination="irt-nc-Exw" id="a3I-Ew-008"/>
                         <outlet property="tBtnTrail" destination="zuP-uR-8Jj" id="Crk-oQ-CaB"/>
+                        <outlet property="textView" destination="W5q-T5-gb7" id="7kd-6z-fPa"/>
                         <outlet property="thirdButton" destination="iPA-zq-xdq" id="ric-Ct-YK9"/>
                         <outlet property="thirdToTop" destination="ZpF-S2-Qmk" id="sed-PY-klh"/>
                         <outlet property="thirdView" destination="WIf-Ni-3p2" id="bi7-8q-gEB"/>

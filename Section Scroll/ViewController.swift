@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var secondSectionBtnView: UIView!
+    @IBOutlet weak var textView: UITextView!
     
     // constaints for sections
     @IBOutlet weak var firstToTop: NSLayoutConstraint!
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tBtnLead: NSLayoutConstraint!
     @IBOutlet weak var tBtnTrail: NSLayoutConstraint!
     
+    @IBOutlet weak var fBtnHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,7 @@ class ViewController: UIViewController {
         secondSectionBtnView.layer.borderWidth = 2
         secondSectionBtnView.backgroundColor = UIColor.clear
         setBtnColorsDark()
+        
     }
     
     // Color to use (from app)
@@ -67,14 +70,14 @@ class ViewController: UIViewController {
 //        secondView.layer.shadowColor = UIColor.black.cgColor
 //        secondView.layer.shadowOpacity = 1
 //        secondView.layer.shadowOffset = CGSize.zero
-//        secondView.layer.shadowRadius = 3
+//        secondView.layer.shadowRadius = 5
         
         //thirdToTop.constant = 200
         thirdView.backgroundColor = UIColor(red: 252.0/255.0, green: 237.0/255.0, blue: 186.0/255.0, alpha: 1.0)
 //        thirdView.layer.shadowColor = UIColor.black.cgColor
 //        thirdView.layer.shadowOpacity = 1
 //        thirdView.layer.shadowOffset = CGSize.zero
-//        thirdView.layer.shadowRadius = 3
+//        thirdView.layer.shadowRadius = 5
         
         roundButtonCorners(button: firstButton)
         roundButtonCorners(button: secondButton)
@@ -87,6 +90,8 @@ class ViewController: UIViewController {
         self.secondToTop.constant = self.view.frame.height - (150 + 48)
         self.thirdToTop.constant = self.view.frame.height - (100 + 32)
         
+        fBtnHeight.constant = fBtnHeight.constant + 8
+        
         zeroFirstBtnConstraints()
         setSecondBtnConstrains(to: 8.0)
         setThirdBtnConstrains(to: 8.0)
@@ -94,6 +99,8 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn, animations: { () -> Void in
             
             self.view.layoutIfNeeded()
+            
+            self.firstButton.titleLabel!.font = UIFont(name: "AvenirNext-DemiBold", size: 22)
             
             self.firstButton.layer.cornerRadius = 0
             self.roundButtonCorners(button: self.secondButton)
@@ -112,6 +119,8 @@ class ViewController: UIViewController {
         secondToTop.constant = (50 + 16)
         thirdToTop.constant = view.frame.height - (100 + 32)
         
+        fBtnHeight.constant = 50
+        
         setFirstBtnConstrains(to: 8.0)
         zeroSecondBtnConstrains()
         setThirdBtnConstrains(to: 8.0)
@@ -119,6 +128,8 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.2, delay: 0, options: .curveEaseIn, animations: { () -> Void in
             
             self.view.layoutIfNeeded()
+            
+            self.firstButton.titleLabel!.font = UIFont(name: "AvenirNext-DemiBold", size: 18)
             
             self.roundButtonCorners(button: self.firstButton)
             self.secondButton.layer.cornerRadius = 0
@@ -146,6 +157,13 @@ class ViewController: UIViewController {
         }, completion: { (value: Bool) in
             
         })
+    }
+    
+    // MARK: - Action
+    
+    // TODO: get keyboard to dissmiss when view is tapped
+    @objc func endEditting(sender: Any) {
+        textView.resignFirstResponder()
     }
     
     // MARK: - Helper Methods
